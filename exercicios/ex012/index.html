@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTLM5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="videos/animais.mp4" width="400" poster="imagens/Sem título.png" controls></video>
+
+    <h1>Forma ideal</h1>
+    <p>Ideal é utilizar desta forma, incluindo todos formados possíveis para todos os dispositivos, sempre de maneira de precedência</p>
+    <video width="400" poster="imagens/Sem título.png" autoplay controls loop>
+        <source src="videos/Animais1.mp4" type="video/mp4">
+        <source src="videos/Animais.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/LW0bhKitRBk?si=VZNShQ-REU3sT4y7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
+    
+</body>
+</html>
