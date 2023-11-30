@@ -7,11 +7,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!-- quando mudar de tamanho -->
     <header>
         <h1>Meu Site</h1>
-        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span> <!-- quando clicar menu -->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -36,11 +37,21 @@
     </main>
 
         <script>
-            function clickMenu(){
-                if(itens.style.display == 'block'){
-                    itens.style.display = 'none'
+            function mudouTamanho(){ /* função atribuida no body */
+                if(window.innerWidth >= 768){ /* Se a largura da minha tela for maior ou igual a 768px*/
+                    itens.style.display = 'block' /* retorno o menu */
                 } else{
-                    itens.style.display = 'block'
+                    itens.style.display = 'none' /* se for menor não me retorne nada */
+                }
+            }
+
+
+
+            function clickMenu(){ /* função atribuida no menu "id burger" */
+                if(itens.style.display == 'block'){ /* se a lista do menu for igua a bloco */
+                    itens.style.display = 'none' /* me retorne nada quando clicar */
+                } else{
+                    itens.style.display = 'block' /* se tiver nada me retorne o menu quando clicar */
                 }
             }
         </script>

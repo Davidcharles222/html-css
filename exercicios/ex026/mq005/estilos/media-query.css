@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+    span#burger{
+        display: none;
+    }
+    menu li{
+        display: inline-block;
+        color: black;
+    }
+    menu a{
+        color: black;
+    }
+    main{
+        width: 769px;
+    }
+}
