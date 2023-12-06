@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* organizando menu lateral */
+
+
+.sidebar{
+    position: fixed; /* Se não mencionar posição fixa a outra div sobrepoe */
+    background-color: rgb(118, 118, 197);
+    height: 100vh;
+    width: 300px;
+}
+
+.sidebar-container{
+    padding-top: 40px;
+}
+
+.logo-doceria{
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.sidebar-container h1{
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.sidebar-container a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.sidebar-container a:hover{
+    color: yellow;
+}
+
+.sidebar-container li{
+    padding-bottom: 30px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.content{
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+section{
+    padding-left: 50px;
+}
+
+section#sessao-bemvindo{
+    padding: 0px;
+}
+
+.logo-principal{
+    background-image: url(../img/banner2.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+section .sessao-bemvindo-content{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1{
+    font-size: 48px;
+    padding: 40px 0px;
+    color: rgb(108, 108, 208);
+}
+
+h2{
+    font-size: 35px;
+    color: rgb(108, 108, 208);
+    padding-bottom: 30px;
+
+}
+
+p{
+    padding-bottom: 30px;
+    line-height: 1.5em;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after { /* depois da sessao bem vindo e depois da sessao sobre, crie um bloco invisível */
+	content: "";
+	display: block;
+	clear: both; /* permite criar floats sem interferir na posição do conteudo */
+	margin-bottom: 100px;
+}
+
+.mini-banner{
+    display: block;
+    float: left;
+    background: black url(../img/banner3.jpg);
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+}
+
+.texto-bemvindo{
+    position: absolute;
+    left: 370px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.texto-bemvindo p{
+    margin-left: 25px;
+}
+
+#sessao-sobrenos .mini-banner{
+    display: block;
+    float: right;
+    margin-right: 50px;
+    background: url(../img/banner4.jpg) center;
+    background-size: cover;
+    margin-left: 50px;
+}
+
+#lermaisbnt, input[type=submit]{
+    background-color: rgb(104, 104, 213);
+    width: 200px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    margin-left: 25px;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#lermaisbnt:hover, input[type=submit]:hover{
+    background-color: rgb(30, 30, 68);
+}
+
+.texto-sobrenos{
+    padding-right: 50px;
+    text-align: justify;
+}
+
+#sessao-doces1, #sessao-doces2, #sessao-doces3{
+    height: 200px;
+    margin-bottom: 200px;
+    
+}
+
+.img-doces1{
+    display: inline-block;
+    width: 203px;
+    height: 250px;
+    background-color: black;
+    margin: 10px;
+}
+
+#img1{
+    background-image: url(../img/galeria1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img2{
+    background-image: url(../img/galeria2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img3{
+    background-image: url(../img/galeria3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img4{
+    background-image: url(../img/galeria4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img5{
+    background-image: url(../img/galeria5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-doces2{
+    display: inline-block;
+    width: 355px;
+    height: 250px;
+    background-color: black;
+    margin: 10px;
+}
+
+#img6{
+    background-image: url(../img/galeria6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img7{
+    background-image: url(../img/galeria7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img8{
+    background-image: url(../img/galeria8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-doces3{
+    display: inline-block;
+    width: 260px;
+    height: 250px;
+    background-color: black;
+    margin: 10px;
+}
+
+#img9{
+    background-image: url(../img/galeria9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img10{
+    background-image: url(../img/galeria10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img11{
+    background-image: url(../img/galeria11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#img12{
+    background-image: url(../img/galeria12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario{
+    width: 400px;
+}
+.formulario input[type=text],.formulario input[type=email]{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#textoform{
+    height: 200px;
+    width: 420px;
+    font-size: 1em;
+    font-size: 1em;
+}
+
+::placeholder{
+    color: blue;
+    font-size: 1em;
+}
+
+input[type=submit]{
+    margin: 0px;
+    margin: 20px 0px;
+}
+
+footer{
+    text-align: center;
+    font-weight: bolder;
+    color: rgba(75, 75, 228, 0.744);
+    font-size: 1em;
+}
