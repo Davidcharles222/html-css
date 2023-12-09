@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    color: gray;
+}
+
+h2{
+    font-size: 2em;
+}
+
+/* configurando cabeçalho */
+header{
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    padding: 0 2em;
+}
+
+.logo-host{
+    width: 50px;
+    padding-top: 10px;
+}
+
+nav{
+    position: relative;
+}
+
+.lista-itens{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    margin-top: 30px;
+}
+.lista-itens li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.lista-itens a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.lista-itens a:hover{
+    color: grey;
+}
+
+.default-btn{
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.default-btn:hover{
+    background-color: rgb(17, 60, 17);
+}
+   
+/* configurando banner principal */
+
+.banner-principal{
+    background: black url(../img/mainbanner.png) center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    padding: 8em 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.banner-principal h1{
+    font-size: 3em;
+}
+
+.banner-principal p{
+    font-size: 1.2em;
+}
+
+/* configurando especialidades */
+
+.especialidades-container{
+    width: 90%;
+    margin: auto;
+    padding: 5em 2em;
+    display: flex;
+    text-align: center;
+}
+
+.especialidades-container li{
+    flex: 1 1 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fas{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.especialidades-container h3{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.especialidades-container p{
+    line-height: 20px;
+}
+
+.fas.fa-shield-alt{
+    color: rgb(47, 141, 47);
+}
+
+.fas.fa-rocket{
+    color:rgb(121, 29, 29);
+}
+
+.fas.fa-comments{
+    color: rgb(175, 123, 26);
+}
+
+/* configurando planos */
+.planos{
+    text-align: center;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.planos h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.planos p{
+    font-size: 1.2em;
+}
+
+.planos-container{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
+}
+
+.planos-container ul{
+    flex: 1 1 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 2em;
+    max-width: 220px;
+}
+
+.planos-container li{
+    padding: 10px 0;
+    background-color: rgb(204, 203, 203);
+}
+.planos-container .price{
+    background-color: green;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    line-height: 110px; /* se for mesmo tamanho da altura e largura fica centralizado */
+    color: white;
+    margin: auto;
+    margin-bottom: -50px;
+    position: relative;
+}
+
+.planos-container .category{
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.planos-container .selecionar{
+    background-color: green;
+    color: white;
+    padding: 15px;
+}
+
+.planos-container .recomended{
+    background-color: red;
+}
+
+/* configurando buscar domínio */
+
+.search-domain-container{
+    background-color: rgb(90, 87, 87);
+    width: 100%;
+    text-align: center;
+    padding: 3em 0;
+    color: white;
+}
+
+.search-domain-container h2{
+    margin-bottom: 10px;
+}
+
+.search-domain-container p{
+    margin-bottom: 10px;
+}
+
+.search-domain-container form input[type=text]{
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search-domain-container form input[type=submit]{
+    background-color: green;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* configurando contato */
+
+.contact-container{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contact-container h2{
+    margin-bottom: 10px;
+}
+
+.contact-container form input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.449);
+}
+
+.contact-container textarea{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 425px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.449);
+}
+
+.contact-container form input[type=submit]{
+    background-color: green;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+}
+
+/* configurando meu rodapé */
+footer{
+    padding: 2em 0;
+    text-align: center;
+    color: gray;
+}
+
+/* iniciando minhas midias querys */
+@media screen and (max-width: 1024px){
+    .planos-container{
+        width: 95%;
+    }
+
+    .planos-container ul{
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    .planos-container{
+        flex-wrap:wrap ;
+    }
+    
+}
+
+@media screen and (max-width: 570px){
+    html,body{
+       overflow-x: hidden;
+    }
+
+    header{
+        padding: 0 1em;
+    }
+
+    .lista-itens{
+        font-size: 12px;
+    }
+    .lista-itens li{
+        margin-left: 5px;
+    }
+
+    .especialidades-container{
+        flex-wrap: wrap;
+    }
+
+    .especialidades-container li{
+        margin-bottom: 20px;
+    }
+    
+    .planos-container ul{
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-container textarea{
+        width: 100%;
+    }
+}
