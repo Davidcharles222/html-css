@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+
+/* configuração geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* configuração sidebar */
+
+.sidebar{
+    width: 410px;
+    height: 100vh;
+}
+
+.navigatiobar-container{
+    position: relative;
+    height: 60px;
+    background-color: rgb(230, 223, 223);
+    padding:0px 20px;
+}
+
+.user-photo{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(199, 191, 191);
+}
+
+.list-icons-navigatiobar{
+   
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+
+.list-icons-navigatiobar i{
+    padding-left: 10px;
+    margin-right: 10px;
+    color: grey;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* configuração notificação */
+
+.notification-container{
+    background-color:#9DE1FE;
+    height: 80px;
+    padding: 1em 0;
+}
+
+.notification-container .fa-regular.fa-bell-slash{
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    left: 10px;
+    color: rgba(128, 128, 128, 0.327);
+
+}
+
+.notification-container p{
+    padding-left: 70px;
+
+}
+
+.notification-message{
+    font-size: 16px;
+}
+
+.activar-notification-message{
+    font-size: 14px;
+}
+
+.fa-solid.fa-angle-right{
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+/* configurando barra procurar */
+
+.search-container{
+    background-color: rgb(237, 231, 231);
+    height: 40px;
+    position: relative;
+    padding-top: 5.5px;
+    padding-left: 10px;
+}
+
+.search-newconversation{
+    background-color: white;
+    width: 97%;
+    padding: 5px 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+.search-container .fa-solid.fa-magnifying-glass{
+    position: absolute;
+    left: 26px;
+    top: 13px;
+}
+
+.search-newconversation::placeholder{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(220, 212, 212);
+}
+
+/* configurando conversas */
+
+.user-name-conversations{
+    height: 60px;
+    border-top: 1px solid rgb(198, 192, 192);
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+}
+
+.conversation{
+    display: inline-block;
+    margin-left: 60px;
+    height: 60px;
+    padding-top: 7px;
+}
+
+.user-conversations{
+    font-size: 12px;
+}
+
+.fa-solid.fa-check-double{
+    color: blue;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.user-name-conversations:last-child{
+    border-bottom: 1px solid rgb(205, 199, 199);
+}
+
+.user-name-conversations:hover{
+    background-color: rgba(201, 190, 190, 0.36);
+}
+
+.action-sabrina{
+    background-color: rgb(232, 225, 225);
+}
+
+.action-sabrina:hover{
+    background-color: rgb(209, 203, 203);
+}
+
+.timepending-conversations{
+    display: inline-block;
+    float: right;
+    height: 60px;
+}
+
+.time{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: grey;
+}
+
+.pending{
+    background-color:rgb(31, 210, 15);
+    float: right;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* configurando meu conteudo principal */
+
+main{
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: calc(100% - 410px);
+}
+
+nav{
+    background-color: rgb(230, 223, 223);
+    height: 60px;
+    border-left: 1px solid rgb(194, 190, 190);
+    padding: 0px 20px;
+}
+
+nav .user-name{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 40px;
+}
+
+.list-nav-container{
+    display: inline-block;
+    float: right;
+    height: 60px;
+}
+
+.list-nav-container li{
+    display: inline-block;
+    line-height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: grey;
+    font-size: 16px;
+}
+
+/* configurando fundo principal */
+
+.bottom-container{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color:#f1e8dc;
+    position: relative;
+}
+
+.bottom-container .bg-img{
+    background: url(../img/background_whats.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    opacity: 0.06;
+}
+
+.message-conversation{
+    position: absolute;
+    display: inline-block;
+    bottom: 30px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 14px;
+}
+
+.receive-message{
+    margin-bottom: 10px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.send-message{
+    float: right;
+    width: 200px;
+    background-color: rgb(206, 233, 152);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* configurando campo enviar mensagem */
+
+.send-messageuser-container{
+    background-color: rgb(223, 214, 214);
+    height: 60px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 0px;
+    
+}
+
+.enviar{
+    width:calc(100% - 120px);
+    margin-left: 60px;
+    border-radius: 50px;
+    padding: 10px 0;
+    border: none;
+    padding-left: 20px;
+}
+
+
+.fa-regular.fa-face-laugh{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    left: 15px;
+    font-size: 25px;
+    color: grey;
+}
+
+.fa-solid.fa-microphone{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    right: 15px;
+    font-size: 25px;
+    color: grey;
+}
+
+/* ajustando meu triangulo no bloco conversa */
+
+.receive-message::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-right: 17px solid black ;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
