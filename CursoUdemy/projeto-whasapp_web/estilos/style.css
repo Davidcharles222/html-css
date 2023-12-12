@@ -270,6 +270,7 @@ nav .user-name{
     border-radius: 5px;
     padding: 5px;
     position: relative;
+    padding-left: 10px;
 }
 
 .send-message{
@@ -278,6 +279,8 @@ nav .user-name{
     background-color: rgb(206, 233, 152);
     border-radius: 5px;
     padding: 5px;
+    padding-left: 10px;
+    position: relative;
 }
 
 /* configurando campo enviar mensagem */
@@ -331,8 +334,19 @@ nav .user-name{
     width: 0;
     height: 0;
     border-bottom: 17px solid transparent;
-    border-right: 17px solid black ;
+    border-right: 17px solid white ;
     position: absolute;
     top: 0;
     left: -10px;
+}
+
+.send-message:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 17px solid  rgb(206, 233, 152);
+    border-bottom: 17px solid transparent;
+    position: absolute; /* nesse triângulo precisa estar na posição absoluta */
+    top: 0;
+    right: -10px;
 }
