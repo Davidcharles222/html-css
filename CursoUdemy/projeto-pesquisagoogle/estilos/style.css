@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-google{
+    position: absolute;
+    width: 100px;
+    top: 40px;
+    left: 20px;
+}
+
+header{
+    border-bottom: 1px solid rgb(226, 218, 218);
+}
+
+form{
+    display: inline-block;
+    position: relative;
+}
+
+.campo-pesquisa{
+    margin-top: 30px;
+    height: 50px;
+    margin-left: 160px;
+    width: 620px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 1px solid rgb(220, 212, 212);
+    position: relative;
+}
+
+form span{
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    top: 48px;
+}
+
+#search-icon{
+    right: 20px;
+}
+
+#keyboard-icon{
+    right: 60px;
+}
+
+#mic-icon{
+    right: 100px;
+}
+
+ul{
+    display: inline-block;
+    margin-left: 160px;
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+
+li{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+li a{
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgb(144, 133, 133);
+}
+
+li a:hover{
+    color: rgb(56, 86, 167);
+}
+
+#link-ativo {
+    color: blue;
+    height: 35px;
+    border-bottom: 3px solid blue;
+    text-align: left;
+    width: 80px;
+    margin-right: 5px;
+}
+
+#link-ativo a{
+    color: blue;
+}
+
+.list-icons span{
+    font-size: 18px;
+    padding-right: 2px;
+
+}
+
+/* configurando corpo texto*/
+
+.container{
+    padding-left:160px;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    flex:2 1 0;
+    margin-right: 40px;
+}
+
+.primeira-cx{
+    padding-bottom: 5px;
+    line-height: 1.5em;
+    padding-top: 5px;
+}
+
+.result{
+    color: grey;
+    padding: 10px 0;
+}
+
+.triangulo{
+    width: 0px;
+    height: 0px;
+    border-top: 6px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    top: 2px;
+    right: -20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.primeiro-site{
+    color: rgb(87, 81, 81);
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.site-principal{
+    font-size: 1.3em;
+    display: block;
+    margin-top: 5px;
+    color: rgb(32, 32, 182);
+}
+
+.site-principal:hover{
+    text-decoration: underline;
+}
+
+.list-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-info p{
+    margin-right: 5x;
+    flex: 1 1 50%;
+    padding-bottom: 5px;
+    color: grey;
+}
+
+.list-info .negrito{
+    font-weight: bolder;
+    color: rgb(75, 70, 70);
+}
+
+.primeira ul{
+    margin: 0;
+    padding: 0;
+}
+
+.primeira ul li{
+    font-size: 16px;
+    color: rgb(19, 19, 191);
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.primeira-cx .texto{
+    color: rgb(57, 53, 53);
+    padding: 5px 0;
+}
+
+/* configurando aside lado direito do container */
+aside{
+    flex:1 1 0;  
+
+}
+
+.container-aside{
+    margin-top: 50px;
+    margin-right: 50px;
+    min-width: 500px;
+    border: 1px solid rgba(189, 181, 181, 0.358);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.galeria-container{
+    display: flex;
+    position: relative;
+    height: 186px;
+}
+
+.galeria{
+    width: 71%;
+    height: 186px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria div{
+    flex: 1 1 30%;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-principal{
+    border-top-left-radius: 10px;
+}
+
+.foto1{
+    background-image: url(../img/turing2.jpg);
+}
+
+.foto2{
+    background-image: url(../img/turing3.jpg);
+}
+
+.foto3{
+    background-image: url(../img/turing4.jpg);
+    border-top-right-radius: 10px;
+}
+
+.foto4{
+    background-image: url(../img/turing5.jpg);
+}
+
+.foto5{
+    background-image: url(../img/turing6.jpg);
+}
+
+.foto6{
+    background-image: url(../img/turing7.jpg);
+}
+
+.name-alan{
+    border: 1px solid rgba(189, 181, 181, 0.358);
+    position: relative;
+}
+
+.name-alan .p1{
+    font-size: 2em;
+    padding: 5px 10px;
+}
+
+.name-alan .p2{
+    padding:5px 10px;
+    color: grey;
+}
+
+.texto-price{
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.texto-price .nascimento{
+    font-weight: bolder;
+    color: rgb(47, 45, 45);
+}
+
+.about-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.484);
+    width: 120px;
+    text-align: center;
+    border-top-left-radius: 10px;
+}
+
+.about-img a{
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: underline;
+}
