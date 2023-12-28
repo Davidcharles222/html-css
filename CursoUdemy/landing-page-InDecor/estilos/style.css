@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+:root{
+    --primary-blue: #00baf2;
+    --secondary-grey: #95989a;
+    --text-color-white: #fff;
+    --text-secondary-black: #000;
+    --text-tertiary-grey: #5d5d5d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Configurando meu banner principal */
+
+.main-banner{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/hrz-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* configurando lado esquerdo do banner */
+
+.left-banner{
+    color: var(--text-color-white);
+    max-width: 40%;
+}
+
+.left-banner h1{
+    color: var(--primary-blue);
+    font-size: 3.5em;
+    margin-bottom: 1em;
+}
+
+.left-banner .event-left-banner{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    max-width: 50%;
+}
+
+#title-date-event,
+.date-event-left-banner{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.date-event-left-banner{
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+/* configurando lado direito do banner */
+
+.right-banner{
+    background-color: var(--secondary-grey);
+    padding: 2em;
+    max-width: 20%;
+}
+
+.right-banner p{
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+
+.right-banner .group-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    color: var(--text-tertiary-grey);
+}
+
+.right-banner .group-form label{
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.right-banner input,
+.right-banner select{
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: var(--text-tertiary-grey);
+}
+
+#btn{
+    width: 100%;
+    border-radius: none;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--primary-blue);
+    color: var(--text-color-white);
+    border: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.right-banner #btn:hover{
+    opacity: 1;
+}
+
+/* oque iremos aprender */
+
+.learn-container h2{
+    text-align: center;
+    padding: 2em 0;
+    background-color: var(--secondary-grey);
+}
+
+.learn-container-imgs{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 4em;
+    margin: 0 auto;
+}
+
+.img-learn-mini-container{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-learn{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-learn-mini-container p{
+    max-width: 200px;
+    text-align: center;
+    color: var(--text-tertiary-grey);
+    line-height: 1.3em;
+    margin: auto;
+}
+
+#img-learn-1{
+    background-image: url(../img/sqr-1.jpg);
+}
+
+#img-learn-2{
+    background-image: url(../img/sqr-2.jpg);
+}
+
+#img-learn-3{
+    background-image: url(../img/sqr-3.jpg);
+}
+
+/* local do evento */
+
+.local-container{
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/hrz-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color-white);
+}
+
+.address-mini-container,
+.local-mini-container{
+    max-width: 30%;
+}
+
+.address-mini-container{
+    display: flex;
+    text-align: center;
+}
+
+.address-mini-container i{
+    font-size: 5em;
+    color: var(--primary-blue);
+    margin-right: 0.4em;
+}
+
+.address{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.local-mini-container h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: var(--primary-blue);
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+.local-mini-container p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+/* tipos de ambientes */
+
+.environments-container{
+    width: 90%;
+    margin: 4em auto;
+
+}
+
+.environments-mini-container img{
+    width: 50%;
+}
+
+.environments-mini-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.content-environments{
+    justify-self: self-start;
+    width: 100%;
+    padding-left: 6em;
+}
+
+.content-environments li{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    list-style-position: inside;
+    color: var(--text-tertiary-grey);
+}
+
+.content-environments li:last-child{
+    font-weight: bold;
+    color: var(--text-secondary-black);
+}
+
+.content-environments h2{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+#content-environments-1 h2{
+    width: 50%;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Area de registro */
+
+.register-container{
+    padding: 6em 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/hrz-6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.register-container p{
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.register-container #btn{
+    padding: 0.5em 0;
+    width: 30%;
+    font-size: 1.5em;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.register-container #btn:hover{
+    opacity: 1;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 4em 0;
+    color: var(--text-tertiary-grey);
+}
+
+footer h2{
+    font-size: 2em;
+}
+
+footer p:nth-child(2){
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+footer p span{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
